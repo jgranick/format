@@ -1,7 +1,7 @@
 /*
- * format - haXe File Formats
+ * format - Haxe File Formats
  *
- * Copyright (c) 2008, The haXe Project Contributors
+ * Copyright (c) 2008, The Haxe Project Contributors
  * All rights reserved.
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -42,7 +42,7 @@ class BitsOutput {
 		// Clear unused bits
 		v = v & ((1 << n ) - 1);
 		if( n + nbits >= 32 ) {
-			if( n >= 31 ) throw "Bits error";
+			if( n > 31 ) throw "Bits error";
 			var n2 = 32 - nbits - 1;
 			var n3 = n - n2;
 			writeBits(n2,v >>> n3);

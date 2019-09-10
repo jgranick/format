@@ -1,7 +1,7 @@
 /*
- * format - haXe File Formats
+ * format - Haxe File Formats
  *
- * Copyright (c) 2008, The haXe Project Contributors
+ * Copyright (c) 2008, The Haxe Project Contributors
  * All rights reserved.
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -47,7 +47,7 @@ class BitsInput {
 		}
 		var k = i.readByte();
 		if( nbits >= 24 ) {
-			if( n >= 31 ) throw "Bits error";
+			if( n > 31 ) throw "Bits error";
 			var c = 8 + nbits - n;
 			var d = bits & ((1 << nbits) - 1);
 			d = (d << (8 - c)) | (k << c);

@@ -1,10 +1,10 @@
 /*
- * format - haXe File Formats
+ * format - Haxe File Formats
  *
  *  SWF File Format
  *  Copyright (C) 2004-2008 Nicolas Cannasse
  *
- * Copyright (c) 2008, The haXe Project Contributors
+ * Copyright (c) 2008, The Haxe Project Contributors
  * All rights reserved.
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -147,6 +147,7 @@ class Tools {
 		case TBackgroundColor(color): [StringTools.hex(color,6)];
 		case TShape(id,_): ["id",id]; // TODO write when TShape final
 		case TMorphShape(id,_): ["id",id]; // TODO
+		case TButton(id,_):["id",id]; // TODO
 		case TFont(id,_): ["id",id]; // TODO
 		case TFontInfo(id,_): ["id",id]; // TODO
 		case TBinaryData(id,data): ["id",id,"data",hex(data,max)];

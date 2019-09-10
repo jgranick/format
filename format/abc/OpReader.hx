@@ -1,8 +1,8 @@
 /*
- * format - haXe File Formats
+ * format - Haxe File Formats
  * ABC and SWF support by Nicolas Cannasse
  *
- * Copyright (c) 2008, The haXe Project Contributors
+ * Copyright (c) 2008, The Haxe Project Contributors
  * All rights reserved.
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -63,7 +63,7 @@ class OpReader {
 	}
 
 	inline function readIndex<T>() : Index<T> {
-		return Idx(readInt());
+		return new Index(readInt());
 	}
 
 	#if haxe3
